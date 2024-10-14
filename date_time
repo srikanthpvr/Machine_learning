@@ -1,0 +1,67 @@
+## A Comprehensive List of `datetime` Module Methods
+
+**Note:** This list includes methods from all the primary classes within the `datetime` module: `date`, `time`, `datetime`, and `timedelta`.
+
+### `datetime.date` Methods
+* **`date.year`:** Returns the year.
+* **`date.month`:** Returns the month.
+* **`date.day`:** Returns the day.
+* **`date.weekday()`:** Returns the day of the week (0=Monday, 6=Sunday).
+* **`date.isoweekday()`:** Returns the ISO week day (1=Monday, 7=Sunday).
+* **`date.isoformat()`:** Returns the date in ISO format (YYYY-MM-DD).
+* **`date.strftime(format)`:** Formats the date according to a specified format.
+* **`date.fromisocalendar(year, week, day)`:** Creates a date from the ISO year, week, and weekday.
+* **`date.replace(year=None, month=None, day=None)`:** Creates a new date with specified values replaced.
+* **`date.toordinal()`:** Converts the date to a Julian day number.
+* **`date.fromordinal(ordinal)`:** Creates a date from a Julian day number.
+
+### `datetime.time` Methods
+* **`time.hour`:** Returns the hour.
+* **`time.minute`:** Returns the minute.
+* **`time.second`:** Returns the second.
+* **`time.microsecond`:** Returns the microsecond.
+* **`time.isoformat()`:** Returns the time in ISO format (HH:MM:SS[.uuuuuu]).
+* **`time.strftime(format)`:** Formats the time according to a specified format.
+* **`time.replace(hour=None, minute=None, second=None, microsecond=None)`:** Creates a new time with specified values replaced.
+
+### `datetime.datetime` Methods
+* **`datetime.year`:** Returns the year.
+* **`datetime.month`:** Returns the month.
+* **`datetime.day`:** Returns the day.
+* **`datetime.hour`:** Returns the hour.
+* **`datetime.minute`:** Returns the minute.
+* **`datetime.second`:** Returns the second.
+* **`datetime.microsecond`:** Returns the microsecond.
+* **`datetime.weekday()`:** Returns the day of the week (0=Monday, 6=Sunday).
+* **`datetime.isoweekday()`:** Returns the ISO week day (1=Monday, 7=Sunday).
+* **`datetime.isoformat()`:** Returns the datetime in ISO format (YYYY-MM-DD HH:MM:SS[.uuuuuu]).
+* **`datetime.strftime(format)`:** Formats the datetime according to a specified format.
+* **`datetime.strptime(string, format)`:** Parses a string into a datetime object according to a specified format.
+* **`datetime.replace(year=None, month=None, day=None, hour=None, minute=None, second=None, microsecond=None)`:** Creates a new datetime with specified values replaced.
+* **`datetime.date()`:** Returns the date component of the datetime.
+* **`datetime.time()`:** Returns the time component of the datetime.
+* **`datetime.timestamp()`:** Returns the datetime as a Unix timestamp.
+* **`datetime.fromtimestamp(timestamp)`:** Creates a datetime from a Unix timestamp.
+* **`datetime.utcfromtimestamp(timestamp)`:** Creates a datetime from a Unix timestamp in UTC.
+* **`datetime.combine(date, time)`:** Combines a date and a time to create a datetime.
+* **`datetime.utcnow()`:** Returns the current UTC datetime.
+
+### `datetime.timedelta` Methods
+* **`timedelta.days`:** Returns the number of days.
+* **`timedelta.seconds`:** Returns the number of seconds.
+* **`timedelta.microseconds`:** Returns the number of microseconds.
+* **`timedelta.total_seconds()`:** Returns the total number of seconds.
+* **`timedelta.days`:** Returns the number of days.
+* **`timedelta.seconds`:** Returns the number of seconds.
+* **`timedelta.microseconds`:** Returns the number of microseconds.
+* **`timedelta.total_seconds()`:** Returns the total number of seconds.
+* **`timedelta.days`:** Returns the number of days.
+* **`timedelta.seconds`:** Returns the number of seconds.
+* **`timedelta.microseconds`:** Returns the number of microseconds.
+* **`timedelta.total_seconds()`:** Returns the total number of seconds.
+* **`timedelta.days`:** Returns the number of days.
+* **`timedelta.seconds`:** Returns the number of seconds.
+* **`timedelta.microseconds`:** Returns the number of microseconds.
+* **`timedelta.total_seconds()`:** Returns the total number of seconds.
+
+**Note:** This list is not exhaustive, but it covers most of the commonly used methods in the `datetime` module. For a complete reference, please refer to the official Python documentation: [https://docs.python.org/3/library/datetime.html](https://docs.python.org/3/library/datetime.html)
