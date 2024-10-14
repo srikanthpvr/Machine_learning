@@ -1,0 +1,34 @@
+Common os Module Methods
+Here are some of the most commonly used methods from the os module in Python:
+
+File and Directory Operations
+•	os.path.exists(path): Checks if a file or directory exists.
+•	os.path.isfile(path): Checks if a path is a file.
+•	os.path.isdir(path): Checks if a path is a directory.
+•	os.mkdir(path): Creates a new directory.
+•	os.makedirs(path): Creates directories recursively.
+•	os.rmdir(path): Removes a directory (must be empty).
+•	os.remove(path): Removes a file.
+•	os.rename(src, dst): Renames a file or directory.
+•	os.listdir(path): Lists the contents of a directory.
+•	os.walk(path): Walks through a directory tree.
+Environment Variables
+•	os.environ: A dictionary containing environment variables.
+•	os.getenv(key, default): Gets the value of an environment variable.
+•	os.putenv(key, value): Sets the value of an environment variable.
+Process Management
+•	os.system(command): Executes a system command.
+•	os.spawnv(mode, path, args): Spawns a new process.
+Path Manipulation
+•	os.path.join(path, *paths): Joins path components.
+•	os.path.split(path): Splits a path into a directory and a file.
+•	os.path.dirname(path): Returns the directory name of a path.
+•	os.path.basename(path): Returns the base name of a path.
+•	os.path.abspath(path): Returns the absolute path of a path.
+•	os.path.normpath(path): Normalizes a path.
+Other Methods
+•	os.getcwd(): Gets the current working directory.
+•	os.chdir(path): Changes the current working directory.
+•	os.chmod(path, mode): Changes the mode of a file or directory.
+•	os.stat(path): Gets a stat object for a file or directory.
+These are just a few of the many methods available in the os module. For a complete list, refer to the official Python documentation: https://docs.python.org/3/library/os.html
