@@ -9,6 +9,8 @@ Here's a breakdown of the key aspects involved in feature engineering:
 * **Data Imputation:** Filling in missing values using techniques like mean, median, mode, or interpolation.
     ->SimpleImputer,
 * **Data Normalization:** Scaling numerical features to a common range (e.g., min-max scaling, standardization).
+    ->Scaling - Should be done when we use any algorithm(lr,logr,pca,neural nets,knn) which is dependant on the distance calculation,variance 
+    ->Standard Scaling --mean 0,standard deviation =1,actually we are centering the data and scaling to 1
 * **Data Transformation:** Applying functions to data to improve model performance (e.g., log transformations, square root).
 * **Outlier Detection and Handling:** Identifying and addressing extreme values.
 
