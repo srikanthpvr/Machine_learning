@@ -10,7 +10,10 @@ Here's a breakdown of the key aspects involved in feature engineering:
     ->SimpleImputer,
 * **Data Normalization:** Scaling numerical features to a common range (e.g., min-max scaling, standardization).
     ->Scaling - Should be done when we use any algorithm(lr,logr,pca,neural nets,knn) which is dependant on the distance calculation,variance 
-    ->Standard Scaling --mean 0,standard deviation =1,actually we are centering the data and scaling to 1
+    ->Standard Scaling --mean 0,standard deviation =1,actually we are centering the data and scaling to 1.Distribution of the data will not change,scale of data will change,outliers will remain as outliers.
+    ->Normalization - There are 5 types of normalization-1.Min-Max scaling 2.Mean Normalization 3.Max Absolute scaling 4.Robust Scaling
+    ->Outliers has an impact in the Min-Max scaling.Scikit learn supports min max normalization and roboust scaling.Roboust scaling works well for sparse data
+    ->Most of the time Standard scalar  is sufficient.For CNN we use min max scalar 
 * **Data Transformation:** Applying functions to data to improve model performance (e.g., log transformations, square root).
 * **Outlier Detection and Handling:** Identifying and addressing extreme values.
 
