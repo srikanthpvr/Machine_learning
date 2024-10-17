@@ -1,0 +1,7 @@
+DATA LEAKAGE
+  To solve the data leakage issue,always use "fit" & "transform" or "fit_transform" method on  training data and "transform" method for test data 
+Fit genearlly calculates or learns from the data however transform will apply the calculations to the data
+By using pipelines we can apply transform method without fail to test data before predicting on the test data
+
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test = train_test_split(X,y,test_size = 0.2,random_state = 32)
