@@ -25,7 +25,7 @@
   - `tf.slice()`: Extracts a slice from a tensor.
 
 * **Mathematical Operations:**
-  - `tf.add()`
+  - `tf.add()` -- This is addition of 2 tensors not for aggregation of rows and columns.Find later inthe below page.
   - `tf.subtract()`
   - `tf.multiply()`
   - `tf.divide()`
@@ -69,3 +69,102 @@
 * **Data Pipelines:** `tf.data.Dataset.map()`, `tf.data.Dataset.shuffle()`, `tf.data.Dataset.batch()`
 
 **For a more in-depth understanding and practical examples, please refer to the official TensorFlow documentation:** [https://www.tensorflow.org/](https://www.tensorflow.org/)
+
+## TensorFlow Aggregation Functions
+
+TensorFlow provides several functions to aggregate tensors, including:
+
+### Core Aggregation Functions
+
+* **`tf.reduce_sum()`:** Calculates the sum of elements along a given axis or over all elements.
+* **`tf.reduce_mean()`:** Calculates the mean of elements along a given axis or over all elements.
+* **`tf.reduce_min()`:** Finds the minimum value along a given axis or over all elements.
+* **`tf.reduce_max()`:** Finds the maximum value along a given axis or over all elements.
+* **`tf.reduce_prod()`:** Calculates the product of elements along a given axis or over all elements.
+
+### Example Usage:
+
+```python
+import tensorflow as tf
+
+# Create a tensor
+tensor = tf.constant([[1, 2, 3], [4, 5, 6]])
+
+# Calculate the sum of all elements
+sum_all = tf.reduce_sum(tensor)
+print(sum_all)  # Output: 21
+
+# Calculate the mean of each row
+row_means = tf.reduce_mean(tensor, axis=1)
+print(row_means)  # Output: [2. 5.]
+
+# Calculate the maximum value in each column
+column_max = tf.reduce_max(tensor, axis=0)
+print(column_max)  # Output: [4 5 6]
+```
+
+### Additional Considerations:
+
+* **`axis` Argument:** The `axis` argument specifies the dimension along which the reduction operation is performed.
+* **`keepdims` Argument:** You can use the `keepdims` argument to keep the reduced dimensions with size 1.
+* **Custom Reductions:** You can define custom reduction operations using `tf.reduce_mean()` and other functions.
+
+By effectively using these aggregation functions, you can perform various statistical calculations and data manipulations on your tensors. 
+ 
+**Remember to import TensorFlow:**
+
+```python
+import tensorflow as tf
+```
+
+Before using these functions.
+----------------------------------------------------
+## Generating Random Numbers in TensorFlow
+---------------------------------------------------
+TensorFlow provides several functions to generate random numbers from various distributions. Here are some of the most commonly used ones:
+
+### 1. **`tf.random.uniform()`**
+Generates random numbers from a uniform distribution between a specified minimum and maximum value.
+
+```python
+import tensorflow as tf
+
+# Generate a random number between 0 and 1
+random_number = tf.random.uniform([])
+
+# Generate a tensor of shape (3, 4) with random values between 0 and 1
+random_tensor = tf.random.uniform([3, 4])
+```
+
+### 2. **`tf.random.normal()`**
+Generates random numbers from a normal (Gaussian) distribution with a specified mean and standard deviation.
+
+```python
+# Generate a random number from a standard normal distribution
+random_number = tf.random.normal([])
+
+# Generate a tensor of shape (2, 2) with random values from a normal distribution with mean 0 and standard deviation 1
+random_tensor = tf.random.normal([2, 2], mean=0, stddev=1)
+```
+
+### 3. **`tf.random.truncated_normal()`**
+Generates random numbers from a truncated normal distribution.
+
+```python
+# Generate a random number from a truncated normal distribution with mean 0 and standard deviation 1, clipped to the interval [-2, 2]
+random_number = tf.random.truncated_normal([], mean=0, stddev=1, dtype=tf.float32)
+```
+
+### Setting a Seed for Reproducibility
+
+To ensure that the same sequence of random numbers is generated each time you run the code, you can set a seed using `tf.random.set_seed()`:
+
+```python
+tf.random.set_seed(42)
+```
+
+With this seed, the random number generation will be deterministic.
+
+By understanding these functions and techniques, you can effectively generate random numbers in TensorFlow for various machine learning and data science applications.
+
+
