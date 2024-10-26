@@ -1,0 +1,51 @@
+**Here's a comprehensive list of common methods in Pandas:**
+
+### Data Manipulation and Analysis:
+* **`head()`:** Returns the first n rows.
+* **`tail()`:** Returns the last n rows.
+* **`shape()`:** Returns the dimensions of the DataFrame.
+* **`info()`:** Provides summary information about the DataFrame.
+* **`describe()`:** Generates descriptive statistics.
+* **`sort_values()`:** Sorts the DataFrame by specified columns.
+* **`groupby()`:** Groups data based on one or more columns.
+* **`merge()`:** Merges DataFrames based on a common column.
+* **`concat()`:** Concatenates DataFrames.
+* **`pivot_table()`:** Creates a pivot table.
+* **`melt()`:** Reshapes the DataFrame from wide to long format.
+* **`dropna()`:** Drops rows or columns with missing values.
+* **`fillna()`:** Fills missing values with a specified value or method.
+* **`replace()`:** Replaces values with new values.
+* **`rename()`:** Renames columns or indices.
+* **`drop_duplicates()`:** Removes duplicate rows.
+* **`query()`:** Filters rows based on a boolean expression.
+
+### Data Cleaning and Preparation:
+* **`to_datetime()`:** Converts a column to datetime format.
+* **`to_numeric()`:** Converts a column to numeric format.
+* **`astype()`:** Casts a column to a specific data type.
+* **`str.lower()`:** Converts strings to lowercase.
+* **`str.upper()`:** Converts strings to uppercase.
+* **`str.strip()`:** Removes leading and trailing whitespace.
+* **`str.split()`:** Splits strings into substrings.
+* **`str.replace()`:** Replaces substrings with new substrings.
+
+### Data Visualization:
+* **`plot()`:** Creates various plots (line, bar, scatter, etc.).
+* **`hist()`:** Creates histograms.
+* **`boxplot()`:** Creates box plots.
+* **`scatter_plot()`:** Creates scatter plots.
+
+### Input/Output:
+* **`read_csv()`:** Reads data from a CSV file.
+* **`read_excel()`:** Reads data from an Excel file.
+* **`read_json()`:** Reads data from a JSON file.
+* **`to_csv()`:** Writes DataFrame to a CSV file.
+* **`to_excel()`:** Writes DataFrame to an Excel file.
+* **`to_json()`:** Writes DataFrame to a JSON file.
+
+**Remember to import the Pandas library before using these functions and methods:**
+```python
+import pandas as pd
+```
+
+These are just a few of the many methods available in Pandas. For a more comprehensive list and detailed explanations, please refer to the official Pandas documentation: [https://pandas.pydata.org/](https://pandas.pydata.org/)
