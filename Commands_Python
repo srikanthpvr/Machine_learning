@@ -1,1 +1,74 @@
+## A Comprehensive List of Python's "Built-in Functions" and "Methods"
+**Note:** This is a partial list, as Python offers a vast array of functions and methods across its standard library and various modules.
+Methods: We have to use it at the end of the object . Eg: x.append()
+Built in functions : We have to pass the arguments in the function.We have to use like a wrapper.Eg:sum([1,2,3])
+
+### Built-in Functions
+
+* **Mathematical Functions:**
+  - `abs()`: Returns the absolute value of a number.
+  - `divmod()`: Returns the quotient and remainder of division.
+  - `max()`: Returns the largest item in an iterable.
+  - `min()`: Returns the smallest item in an iterable.
+  - `pow()`: Returns the result of a number raised to a power.
+  - `round()`: Rounds a number to a specified number of decimal places.
+  - `sum()`: Returns the sum of all items in an iterable.
+
+* **Type Conversion Functions:**
+  - `int()`: Converts a value to an integer.
+  - `float()`: Converts a value to a floating-point number.
+  - `str()`: Converts a value to a string.
+  - `bool()`: Converts a value to a Boolean.
+
+* **Input/Output Functions:**
+  - `print()`: Prints values to the console.
+  - `input()`: Reads input from the user.
+
+* **Other Useful Functions:**
+  - `len()`: Returns the length of an object.
+  - `range()`: Generates a sequence of numbers.
+  - `type()`: Returns the type of an object.
+  - `isinstance()`: Checks if an object is an instance of a class.
+
+### Common Methods for Data Structures
+
+**Lists:**
+  - `append()`: Adds an element to the end of the list.
+  - `extend()`: Appends elements from another iterable to the end of the list.
+  - `insert()`: Inserts an element at a specific index.
+  - `remove()`: Removes the first occurrence of a specified element.
+  - `pop()`: Removes and returns an element at a specific index (or the last element if no index is specified).
+  - `index()`: Returns the index of the first occurrence of a specified element.
+  - `count()`: Returns the number of occurrences of a specified element.
+  - `sort()`: Sorts the list in ascending order.
+  - `reverse()`: Reverses the order of elements in the list.
+  - `clear()`: Removes all elements from the list.
+  - `copy()`: Returns a shallow copy of the list.
+
+**Strings:**
+  - `upper()`: Converts all characters to uppercase.
+  - `lower()`: Converts all characters to lowercase.
+  - `strip()`: Removes leading and trailing whitespace.
+  - `split()`: Splits the string into a list of substrings.
+  - `join()`: Joins elements of an iterable with a separator string.
+  - `find()`: Returns the index of the first occurrence of a substring.
+  - `replace()`: Replaces occurrences of a substring with another substring.
+
+**Dictionaries:**
+  - `keys()`: Returns a view of the dictionary's keys.
+  - `values()`: Returns a view of the dictionary's values.
+  - `items()`: Returns a view of the dictionary's key-value pairs.
+  - `get()`: Returns the value for a key, or a default value if the key is not found.
+  - `pop()`: Removes and returns an item with the specified key.
+  - `update()`: Updates the dictionary with key-value pairs from another dictionary or iterable.
+
+**For a more comprehensive list and detailed explanations, consult Python's official documentation or use tools like the Python interactive interpreter to explore the available functions and methods.**
+ 
+**Remember to import necessary modules for additional functionalities:**
+```python
+import math  # For mathematical functions
+import random  # For random number generation
+import os  # For operating system interactions
+import sys  # For system-specific parameters and functions
+```
 
