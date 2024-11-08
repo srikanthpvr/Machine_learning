@@ -1,0 +1,17 @@
+R2 for training data goodness of fit -how much data is using to explain the variance
+for test data accuracy  = 100-MAPE has to be used. MAPE = Mean Absolute percentage error
+to explain the customer we need to show MAPE which will explain how much error is model making
+For training the hyperparameters we need to use MAE,RMSE,MSE
+
+python has requests module  and flask has request function,jsonify
+from requests module we can use requests.loads to read the json file to python object and request.dumps for converting to json file from pyton object
+
+Always use F1 score for classification
+
+clasfication Metrics:
+Categorical cross entropy
+Binomial cross entropy
+
+Loss functions:
+
+
