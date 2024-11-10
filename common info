@@ -14,4 +14,30 @@ Binomial cross entropy
 
 Loss functions:
 
+**Why F1-Score Uses Harmonic Mean Instead of Arithmetic Mean**
+
+The F1-score is a metric used to evaluate the performance of a classification model, particularly in imbalanced datasets. It's calculated as the harmonic mean of precision and recall.
+
+**Why Harmonic Mean?**
+
+The harmonic mean is used instead of the arithmetic mean because it gives more weight to lower values. This means that if either precision or recall is low, the F1-score will also be low. In contrast, the arithmetic mean would give equal weight to both metrics, which might not accurately reflect the overall performance of the model.
+
+**Here's a breakdown:**
+
+* **Precision:** The proportion of positive identifications that were actually correct.
+* **Recall:** The proportion of actual positives that were correctly identified.
+
+**Arithmetic Mean:**
+- Gives equal weight to both precision and recall.
+- If one metric is high and the other is low, the arithmetic mean can still be high, which might not accurately reflect the model's performance.
+
+**Harmonic Mean:**
+- Penalizes low values more heavily.
+- If either precision or recall is low, the F1-score will also be low.
+- This encourages a balance between precision and recall, ensuring that the model performs well on both metrics.
+
+**In summary:**
+
+The harmonic mean is a more robust metric for evaluating classification models, especially when dealing with imbalanced datasets. It ensures that the model performs well on both precision and recall, providing a more comprehensive assessment of its overall performance.
+
 
