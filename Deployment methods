@@ -39,8 +39,6 @@ The choice of deployment method depends on factors like:
 •	Team Collaboration and Integration: Cloud platforms provide features like model versioning and monitoring, which can be helpful when working with teams.
 Consider these aspects to select the most suitable deployment approach for your Python machine learning model.
 
-
-
  
 Docker and containers play a crucial role in simplifying and streamlining model deployment by providing several key benefits:
 1. Packaging and Isolation:
