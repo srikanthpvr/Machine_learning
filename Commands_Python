@@ -71,4 +71,108 @@ import random  # For random number generation
 import os  # For operating system interactions
 import sys  # For system-specific parameters and functions
 ```
+-------------------------------
+datetime - python inbuilt
+import pandas as pd
+
+# Sample DataFrame with a datetime column
+data = {'Date': ['2023-11-23 12:34:56', '2022-12-12 09:15:30']}
+df = pd.DataFrame(data)
+
+# Convert the 'Date' column to datetime format
+df['Date'] = pd.to_datetime(df['Date'])
+
+# Extract the date part
+df['Date_Only'] = df['Date'].dt.date
+print(df)
+
+EXTRA CODE for accessing the date details
+--------------------------------------
+data["date"]=data['datetime'].dt.date
+data["hr"] = data['datetime'].dt.hour
+data["day"] = data['datetime'].dt.day
+data["min"] = data['datetime'].dt.minute
+data["year"] = data['datetime'].dt.year
+data["time"] = data['datetime'].dt.time
+-------------------------------
+
+\\\\\\\ There is a DATETIME module in the python\\\\\\\\\\\
+**Top 15 Useful Commands from the `datetime` Module**
+
+The `datetime` module in Python is a powerful tool for working with dates and times. Here are 15 of its most useful commands:
+
+1. **`datetime.datetime.now()`:**
+   - Returns the current local date and time.
+
+2. **`datetime.date.today()`:**
+   - Returns the current local date.
+
+3. **`datetime.datetime.strptime(date_string, format)`:**
+   - Parses a string representing a date and time into a datetime object.
+
+4. **`datetime.datetime.strftime(format)`:**
+   - Formats a datetime object into a string.
+
+5. **`datetime.timedelta`:**
+   - Represents a duration of time.
+
+6. **`datetime.datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)`:**
+   - Creates a timedelta object.
+
+7. **`datetime.datetime + timedelta`:**
+   - Adds a timedelta to a datetime object.
+
+8. **`datetime.datetime - timedelta`:**
+   - Subtracts a timedelta from a datetime object.
+
+9. **`datetime.datetime.year`:**
+   - Accesses the year attribute of a datetime object.
+
+10. **`datetime.datetime.month`:**
+   - Accesses the month attribute of a datetime object.
+
+11. **`datetime.datetime.day`:**
+   - Accesses the day attribute of a datetime object.
+
+12. **`datetime.datetime.hour`:**
+   - Accesses the hour attribute of a datetime object.
+
+13. **`datetime.datetime.minute`:**
+   - Accesses the minute attribute of a datetime object.
+
+14. **`datetime.datetime.second`:**
+   - Accesses the second attribute of a datetime object.
+
+15. **`datetime.datetime.microsecond`:**
+   - Accesses the microsecond attribute of a datetime object.
+
+**Example Usage:**
+
+```python
+import datetime
+
+# Get current date and time
+now = datetime.datetime.now()
+print(now)
+
+# Parse a date string
+date_string = "2023-11-23 12:34:56"
+parsed_date = datetime.datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
+print(parsed_date)
+
+# Calculate a future date
+future_date = now + datetime.timedelta(days=7)
+print(future_date)
+
+# Format a date and time
+formatted_date = now.strftime("%B %d, %Y %H:%M:%S")
+print(formatted_date)
+```
+
+By mastering these commands, you can effectively work with dates and times in your Python applications.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+
 
