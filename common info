@@ -40,4 +40,7 @@ The harmonic mean is used instead of the arithmetic mean because it gives more w
 
 The harmonic mean is a more robust metric for evaluating classification models, especially when dealing with imbalanced datasets. It ensures that the model performs well on both precision and recall, providing a more comprehensive assessment of its overall performance.
 
-
+if __name__=="__main__":
+  main()
+To undersatnd better see th below link
+https://www.youtube.com/watch?v=NB5LGzmSiCs 
