@@ -1,5 +1,17 @@
 Amazon Web Services (AWS) provides a wide range of services across various categories. Here's a comprehensive list:
 
+Amazon S3--> Glue --> Redshift/Athena/EMR--> Quicksight(PowerBI)
+Storage --> uplifting the data
+
+Watchdog
+These services can be used in conjunction to create powerful and scalable applications:
+
+Data Storage: Store raw data in "S3".
+Data Processing: Use "EC2" instances to process and transform data.
+Data Storage and Analysis: Store and analyze structured data in RDS or "Redshift."
+Machine Learning: Train machine learning models on the processed data using "SageMaker".
+Model Deployment: Deploy models to a production environment using SageMaker.
+AI Applications: Build AI applications using Bedrock's foundation models and integrate them with other services.
 Compute Services:
 
 1. EC2 (Elastic Compute Cloud)
