@@ -10,6 +10,8 @@ A few weeks ago, we released prompt caching for Claude, which makes this approac
 
 ![image](https://github.com/user-attachments/assets/71c06d83-a238-44c2-b73d-6ae6e994ad93)
 
+### Building a contextual RAG system
+ https://colab.research.google.com/drive/1Yk3KgQRM9s2lSEwV2w9LUkeFD_RksTK7?usp=sharing 
 --------
 
 ## Chunking Strategies for LLM Applications - 
