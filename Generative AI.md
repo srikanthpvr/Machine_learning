@@ -8,7 +8,7 @@ Sometimes the simplest solution is the best. If your knowledge base is smaller t
 
 A few weeks ago, we released prompt caching for Claude, which makes this approach significantly faster and more cost-effective. Developers can now cache frequently used prompts between API calls, reducing latency by > 2x and costs by up to 90% (you can see how it works by reading our prompt caching cookbook).
 
-![image](https://github.com/user-attachments/assets/e618c07f-9d7c-4346-a0c9-8dab87bc5213)
+![image](https://github.com/user-attachments/assets/71c06d83-a238-44c2-b73d-6ae6e994ad93)
 
 --------
 
